@@ -4,19 +4,24 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
 ## Contents:
 
-| Week | script       |
-|-----:|--------------|
-|     1| helloworld.py|
-|     2| bank.py      |
-|     3| tba          |
+| week | program       |
+|-----:|---------------|
+|     1| helloworld.py |
+|     2| bank.py       |
+|     3| tba           |
 
-## Description of each script
+## Description of each program:
 
 1. `helloworld.py`
-    <p> &nbsp; this is the first program we write in the course </p>
+
+   prints "helloworld!" to the console.
 
 2. `bank.py`
-    - takes two integers (cents) adds them together and returns value in euros
+
+   takes two integers (cents) from the user, adds them together and returns the value in Euros. *Automate the Boring Stuff* has a good chapter on basic input/output and simple math operations
+
+   - https://automatetheboringstuff.com/2e/chapter1/
+
 3. `tba`
 
 
