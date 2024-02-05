@@ -12,13 +12,17 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
 ## Description of each script
 
-1. helloworld.py
+1. `helloworld.py`
     <p> &nbsp; this is the first program we write in the course </p>
 
-2. bank.py
-    > takes two integers (cents) adds them together and returns value in euros
+2. `bank.py`
+    - takes two integers (cents) adds them together and returns value in euros
+3. `tba`
 
-## To note
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
 
 Git commit messages are styled following git docs: 
 - https://github.com/git-guides/git-commit
