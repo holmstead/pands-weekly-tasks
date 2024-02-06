@@ -18,3 +18,11 @@ account_number = input("Please enter an 10 digit account number: ")
 
 # print last character of the array
 print(account_number[-1])
+
+# print last 4 characters now
+print(account_number[-4], account_number[-3], account_number[-2], account_number[-1])
+
+# that printed the last 4 numbers but with spaces between, i want to remove spaces
+# found example here: https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
+
+print(account_number[-4], account_number[-3], account_number[-2], account_number[-1], end="")
