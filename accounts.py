@@ -3,7 +3,7 @@
 # get user input, saves input as a string 
 account_number = input("Please enter an 10 digit account number: ")
 
-print(account_number)
+#print(account_number)
 
 # first, attempt to print only last 4 characters
 # "strings are arrays" - https://www.w3schools.com/python/python_strings.asp
@@ -11,6 +11,10 @@ print(account_number)
 # array can be navigated using indices
 # arrays start at zero in python
 # the below code prints the first character of the array
-print(account_number[0])
+#print(account_number[0])
 
-# how to print last character of an array?
+# how to print last character of an array? negative indexing
+# https://www.askpython.com/python/list/negative-indexing
+
+# print last character of the array
+print(account_number[-1])
