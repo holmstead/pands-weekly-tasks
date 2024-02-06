@@ -8,7 +8,7 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 |-----:|---------------|
 |     1| helloworld.py |
 |     2| bank.py       |
-|     3| tba           |
+|     3| accounts.py   |
 
 ## Description of each program:
 
@@ -22,7 +22,9 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
    - https://automatetheboringstuff.com/2e/chapter1/
 
-3. `tba`
+3. `accounts.py`
+
+   theis program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 
 > [!NOTE]  
