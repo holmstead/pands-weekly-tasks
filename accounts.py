@@ -1,4 +1,4 @@
-# theis program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+# this program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 # get user input, saves input as a string 
 account_number = input("Please enter an 10 digit account number: ")
@@ -22,14 +22,20 @@ account_number = input("Please enter an 10 digit account number: ")
 # print last 4 characters now, updated to use splicing
 # https://www.freecodecamp.org/news/python-slicing-how-to-slice-an-array/
 # array[start:stop:step]
-print(account_number[-4:])
+#print(account_number[-4:])
 
 # now print a load of Xs before the last 4 numbers
 # its 6 Xs in this case, but would be better to count the array length and subtract 4 from it
-#number_of_xs = len(account_number)-4
+number_of_xs = len(account_number)-4
 #print('X' * number_of_xs)
 
 # combine the Xs and the last 4 digits
-#print('X' * number_of_xs, account_number[-4:])
+# remove space between Xs and the 4 numbers using sep=""
+# found sep="" example here: https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
+print('X' * number_of_xs, account_number[-4:], sep="")
 
-# if i put a space in the input it gets put in the output as well, next would be to make sure to remove any spaces so that we dont get something like XXXXXX1 34
+# if i put a space in the input it gets put in the output as well
+# next step would be to make sure to remove any spaces so that we dont get something like XXXXXX8 90
+# from the labs: rawString.strip().lower()
+# called normalisation
+# i think it only works for leading and trailing spaces though
