@@ -19,18 +19,17 @@ account_number = input("Please enter an 10 digit account number: ")
 # print last character of the array
 #print(account_number[-1])
 
-# print last 4 characters now
-#print(account_number[-4], account_number[-3], account_number[-2], account_number[-1])
-
-# that printed the last 4 numbers but with spaces between, i want to remove spaces
-# found example here: https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
-
-#print(account_number[-4], account_number[-3], account_number[-2], account_number[-1], sep="")
+# print last 4 characters now, updated to use splicing
+# https://www.freecodecamp.org/news/python-slicing-how-to-slice-an-array/
+# array[start:stop:step]
+print(account_number[-4:])
 
 # now print a load of Xs before the last 4 numbers
 # its 6 Xs in this case, but would be better to count the array length and subtract 4 from it
-number_of_xs = len(account_number)-4
+#number_of_xs = len(account_number)-4
 #print('X' * number_of_xs)
 
 # combine the Xs and the last 4 digits
-print('X' * number_of_xs, account_number[-4], account_number[-3], account_number[-2], account_number[-1], sep="")
+#print('X' * number_of_xs, account_number[-4:])
+
+# if i put a space in the input it gets put in the output as well, next would be to make sure to remove any spaces so that we dont get something like XXXXXX1 34
