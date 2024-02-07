@@ -2,7 +2,8 @@
 amount1 = input("Enter amount1 (in cent): ")
 amount2 = input("Enter amount2 (in cent): ")
 
-# you cant do arithmetic on strings, so convert string inputs to floats
+# you cant do arithmetic on strings, so convert string inputs to integers
+# originally i used floats, but the math gets tricky with floats
 amount1_int = int(amount1)
 amount2_int = int(amount2)
 
