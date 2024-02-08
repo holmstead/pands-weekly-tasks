@@ -7,10 +7,13 @@ amount2 = input("Enter amount2 (in cent): ")
 amount1_int = int(amount1)
 amount2_int = int(amount2)
 
+# maybe next modify script to take input as integers directly
+# add exception handling too, in case something other than integers entered
+
 # add the two amounts together
 cents = amount1_int + amount2_int
 
-# convert cents to euros.
+# convert cents to euros
 euros = cents / 100
 
 # fstrings seems to be a newer way of formatting outputs
@@ -18,4 +21,5 @@ euros = cents / 100
 # https://docs.python.org/3/howto/unicode.html
 # https://home.unicode.org/
 # take a look at using \N{name} eg \N{euro sign}
+# note that euros is rounded to 2 decimal places using .2f
 print(f'The sum of these is \u20AC{float(euros):.2f}')
