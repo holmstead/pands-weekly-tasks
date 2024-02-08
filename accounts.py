@@ -39,3 +39,7 @@ print('X' * number_of_xs, account_number[-4:], sep="")
 # from the labs: rawString.strip().lower()
 # called normalisation
 # i think it only works for leading and trailing spaces though
+# string.replace() method looks good for this
+# whatever is in the first argument gets replaced with whats in the second argument
+account_number_without_spaces = account_number.replace(" ", "")
+print(account_number_without_spaces)
