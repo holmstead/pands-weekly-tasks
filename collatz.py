@@ -2,10 +2,10 @@
 # the program calculates the next value by taking the current value and, if it is even, divides it by two, but if it is odd, multiplys it by three and adds one
 # the program ends if the current value is one
 
-# get user input, saves input as a string 
+# get user input, saves input as an 'int' type
 positive_integer = int(input("Please enter a positive integer: "))
 
-# the modulus operator can be used to determine if a given integer is even or odd
+# the modulo operator can be used to determine if a given integer is even or odd
 # https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/
 
 if positive_integer % 2:
