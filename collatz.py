@@ -3,6 +3,14 @@
 # the program ends if the current value is one
 
 # get user input, saves input as a string 
-positive_integer = input("Please enter a positive integer: ")
+positive_integer = int(input("Please enter a positive integer: "))
 
-print(positive_integer)
+# the modulus operator can be used to determine if a given integer is even or odd
+# https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/
+
+if positive_integer % 2:
+    # "positive integer" is divided by 2 and the 
+    # remainder is returned, if its zero then it is
+    # an even number
+    print("even")
+
