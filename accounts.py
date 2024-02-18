@@ -29,12 +29,12 @@ account_number = input("Please enter an 10 digit account number: ")
 number_of_xs = len(account_number)-4
 #print('X' * number_of_xs)
 
-# combine the Xs and the last 4 digits
-# remove space between Xs and the 4 numbers using sep=""
+# Combine the Xs and the last 4 digits
+# Remove space between Xs and the 4 numbers using sep=""
 # found sep="" example here: https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
-print('X' * number_of_xs, account_number[-4:], sep="")
+#print('X' * number_of_xs, account_number[-4:], sep="")
 
-# if i put a space in the input it gets put in the output as well
+# If i put a space in the input it gets put in the output as well
 # next step would be to make sure to remove any spaces so that we dont get something like XXXXXX8 90
 # from the labs: rawString.strip().lower()
 # called normalisation
@@ -42,4 +42,6 @@ print('X' * number_of_xs, account_number[-4:], sep="")
 # string.replace() method looks good for this
 # whatever is in the first argument gets replaced with whats in the second argument
 account_number_without_spaces = account_number.replace(" ", "")
-print(account_number_without_spaces)
+#print(account_number_without_spaces)
+
+print('X' * number_of_xs, account_number_without_spaces[-4:], sep="")
