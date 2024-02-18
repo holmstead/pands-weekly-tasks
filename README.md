@@ -9,6 +9,7 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 |     1| helloworld.py |
 |     2| bank.py       |
 |     3| accounts.py   |
+|     4| collatz.py   |
 
 ## Description of each program:
 
@@ -24,8 +25,11 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
 3. `accounts.py`
 
-   theis program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+   this program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
+4. `collatz.py`
+
+   this program reads in a positive integer and performs the collatz conjecture.
 
 > [!NOTE]  
 > README file is styled following guides:
@@ -36,3 +40,4 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 > Git commit messages are styled following git docs: 
 - https://github.com/git-guides/git-commit
 
+## References
