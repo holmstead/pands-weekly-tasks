@@ -19,8 +19,12 @@ days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 i = datetime.now().weekday()
 print(f"Today is {days[i]}")
 
+# create a list containg weekend days
 weekend = ["Saturday", "Sunday"]
 
+# create a variable that accesses the days list at the
+# given index i, and saves the associated value in the
+# list to the variable
 today = days[i]
 
 # ckeck the 'weekend' list if today is in it
