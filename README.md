@@ -41,13 +41,14 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
    this program reads in a positive float and give the approximate square root.
 
-> [!NOTE]  
-> README file is styled following guides:
+## References
+
+README file is styled following guides:
+
 - https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 - https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 - https://github.com/coderefinery/documentation/blob/main/content/writing-readme-files.md
 
-> Git commit messages are styled following git docs: 
-- https://github.com/git-guides/git-commit
+Git commit messages are styled following git docs: 
 
-## References
+- https://github.com/git-guides/git-commit
