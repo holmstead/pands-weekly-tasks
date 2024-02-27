@@ -9,7 +9,9 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 |     1| helloworld.py |
 |     2| bank.py       |
 |     3| accounts.py   |
-|     4| collatz.py   |
+|     4| collatz.py    |
+|     5| weekend.py    |
+|     6| squareroot.py |
 
 ## Description of each program:
 
