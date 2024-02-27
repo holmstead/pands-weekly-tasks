@@ -31,6 +31,14 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
    this program reads in a positive integer and performs the collatz conjecture.
 
+5. `weekdays.py`
+
+   this program reads idetermines the day of the week and responds appropriately.
+
+6. `squareroot.py`
+
+   this program reads in a positive float and give the approximate square root.
+
 > [!NOTE]  
 > README file is styled following guides:
 - https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
