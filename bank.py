@@ -1,25 +1,34 @@
+'''
+This program prompts the user and reads in two money amounts (in cent), add the two amounts, then prints out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
+'''
+
 # get user input, saves input as a string 
 amount1 = input("Enter amount1 (in cent): ")
 amount2 = input("Enter amount2 (in cent): ")
 
-# you cant do arithmetic on strings, so convert string inputs to integers
-# originally i used floats, but the math gets tricky with floats
-amount1_int = int(amount1)
-amount2_int = int(amount2)
+# create function to add cents and convert to euro
+def add_cents(amount1_int, amount2_int):
+    # add the two amounts together
+    # convert strings to integers first
+    cents = int(amount1) + int(amount2)
 
-# maybe next modify script to take input as integers directly
-# add exception handling too, in case something other than integers entered
+    # convert cents to euros
+    euros = cents / 100
 
-# add the two amounts together
-cents = amount1_int + amount2_int
+    # print result using fstrings
+    # unicode used for the euro sign
+    print(f'The sum of these is \u20AC{float(euros):.2f}')
 
-# convert cents to euros
-euros = cents / 100
+add_cents(amount1, amount2)
 
-# fstrings seems to be a newer way of formatting outputs
-# note that the euro sign is in Unicode (\u20AC)
-# https://docs.python.org/3/howto/unicode.html
-# https://home.unicode.org/
-# take a look at using \N{name} eg \N{euro sign}
-# note that euros is rounded to 2 decimal places using .2f
-print(f'The sum of these is \u20AC{float(euros):.2f}')
+
+'''
+fstrings seems to be a newer way of formatting outputs.
+Note that the euro sign is in Unicode (\u20AC)
+- https://docs.python.org/3/howto/unicode.html
+- https://home.unicode.org/
+Take a look at using \N{name} eg \N{euro sign}
+Note that euros is rounded to 2 decimal places using .2f
+
+Should add exception handling, in case unexpected data types entered.
+'''
