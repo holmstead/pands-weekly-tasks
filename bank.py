@@ -8,13 +8,22 @@ import sys
 amount1 = input("Enter amount1 (in cent): ")
 amount2 = input("Enter amount2 (in cent): ")
 
-# check if an integer was entered or not
-# called exception handling
+'''
+Check if an integer was entered or not.
+Called exception handling.
+See below for Exception handling examples using while loops, and handling ValueErrors
+ - https://www.freecodecamp.org/news/exception-handling-python/
+
+ValueError is a built-in exception in python:
+ - https://docs.python.org/3/library/exceptions.html
+A ValueError is "raised when an operation or function receives an argument that has the right type but an inappropriate value, and the situation is not described by a more precise exception such as IndexError."
+'''
+
 try:
     int_value = int(amount1) and int(amount2)
-    print("Inputs are an integer")
+    #print("Inputs are integers")
 except ValueError:
-    print("Please enter valid integers.")
+    print("Please enter valid integers.\nExiting")
     sys.exit(1)
 
 # create function to add cents then convert to euro
@@ -27,11 +36,12 @@ def add_cents(amount1_int, amount2_int):
     # convert integer to float for decimal places
     euros = float(cents / 100)
 
+    # return a variable containing the converted answer
     return euros
 
 
 # print result using fstrings
 # unicode used for the euro sign
 # call the function inside the print statement
-#print(f'The sum of these is \u20AC{add_cents(amount1, amount2)}')
+print(f'The sum of these is \u20AC{add_cents(amount1, amount2)}')
 
