@@ -5,14 +5,20 @@
 
 import sys      # used to take arguements in terminal
 # https://docs.python.org/3/library/sys.html
-# we gonna use sys.argv specifically
+# we gonna use sys.argv specifically to pass in arguement
 
 # open the file (example.txt) in read-only mode
+# I'm using "with open" way as it automatically 
+# closes the file after
+# https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/
 with open(sys.argv[1], "r") as inf:
     # read entire file as a string
     contents = inf.read()
-    # print entrie contents in one go
-    print(contents)
+    # print entire contents in one go
+    #print(contents)
+
+# initialise empty variable to store the e count
+e_count = 0
 
 # lets open the file and use some built-in string methods
 # https://docs.python.org/3/library/stdtypes.html#string-methods
@@ -22,10 +28,16 @@ with open(sys.argv[1], "r") as inf:
         # E/e are two different characters
         # make everything lowercase to make search easier
         line = line.lower()
-        print(line)
+        #print(line)
 
         # iterate over each character in each line
         for char in line:
             print(char)
+            # check if the character is e
+            if (char == "e"):
+                # add to the e_count variable
+                e_count += 1
+                
+print(e_count)
 
 
