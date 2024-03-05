@@ -11,5 +11,21 @@ import sys      # used to take arguements in terminal
 with open(sys.argv[1], "r") as inf:
     # read entire file as a string
     contents = inf.read()
+    # print entrie contents in one go
+    print(contents)
 
-print(contents)
+# lets open the file and use some built-in string methods
+# https://docs.python.org/3/library/stdtypes.html#string-methods
+with open(sys.argv[1], "r") as inf:
+    # read file line by line
+    for line in inf:
+        # E/e are two different characters
+        # make everything lowercase to make search easier
+        line = line.lower()
+        print(line)
+
+        # iterate over each character in each line
+        for char in line:
+            print(char)
+
+
