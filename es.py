@@ -7,9 +7,32 @@ import sys      # used to take arguements in terminal
 # https://docs.python.org/3/library/sys.html
 # we gonna use sys.argv specifically to pass in arguement
 
+
+# Check if two arguements were passed in to python
+# i.e. the script name 'es.py' and the textfile name
+# 'example.txt'
+# https://stackoverflow.com/questions/2626026/python-sys-argv-lists-and-indexes
+if len(sys.argv) < 2:
+    print("Usage: python es.py <filename>")
+    print("Please try again.")
+    # kill the program if we didnt get 2 args
+    sys.exit(1)
+else:
+    inf = sys.argv[1]
+
+# next check if the 2 arguement was a textfile
+# check the extension, hgas to be .txt
+# https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file
+if inf.endswith('.txt'):
+    print("It's a text file.")
+else:
+    print("It's not a text file.")
+
 # initialise empty variable to store the e count
 e_count = 0
 
+# try/except - try to open the given file
+# if the file not found, message displayed to console
 try:
     with open(sys.argv[1], "r") as inf:         #[1]
     # read file line by line
@@ -26,10 +49,11 @@ try:
                 if (char == "e"):
                     # add to the e_count variable
                     e_count += 1
-    print(e_count)
+    print(f"Number of e's: {e_count}")
 
 except FileNotFoundError:
     print("File not found, try again.", end="\n")
+
 
 '''
 [1] Open the file (example.txt) in read-only mode
@@ -38,6 +62,7 @@ closes the file after.
 - https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/
 Lets open the file and use some built-in string methods
 - https://docs.python.org/3/library/stdtypes.html#string-methods
+
 '''
 
 
