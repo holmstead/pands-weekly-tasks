@@ -2,7 +2,7 @@
 
 This repository contains solutions to the weekly problem sheets in the module Programming and Scripting, 2024 @ ATU.
 
-## Contents:
+## Contents
 
 | week | program       |
 |-----:|---------------|
@@ -12,8 +12,9 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 |     4| collatz.py    |
 |     5| weekend.py    |
 |     6| squareroot.py |
+|     7| es.py         |
 
-## Description of each program:
+## Description of each program
 
 1. `helloworld.py`
 
@@ -39,7 +40,11 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
 6. `squareroot.py`
 
-   this program reads in a positive float and give the approximate square root.
+   this program reads in a positive float and give the approximate square root using the Newton–Raphson method.
+
+7. `es.py`
+
+   this program reads in a textfile (given as an arguement) and counts the number of instances of the letter E.
 
 ## References
 
