@@ -12,21 +12,45 @@ import sys      # used to take arguements in terminal
 # i.e. the script name 'es.py' and the textfile name
 # 'example.txt'
 # https://stackoverflow.com/questions/2626026/python-sys-argv-lists-and-indexes
-if len(sys.argv) < 2:
-    print("Usage: python es.py <filename>")
-    print("Please try again.")
-    # kill the program if we didnt get 2 args
-    sys.exit(1)
-else:
-    inf = sys.argv[1]
 
-# next check if the 2 arguement was a textfile
-# check the extension, hgas to be .txt
-# https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file
-if inf.endswith('.txt'):
-    print("It's a text file.")
-else:
-    print("It's not a text file.")
+
+def letter_count(inf, letter):
+    letter_count = 0
+    for line in inf:
+        # uppercase and lowercase are different characters
+        # make everything lowercase to make search easier
+        line = line.lower()
+        print(line)
+        # iterate over each character in each line
+        for char in line:
+        #print(char)
+            # check if the character is e
+            if (char == letter):
+                # add to the e_count variable
+                letter_count += 1
+    return letter_count
+
+
+with open(sys.argv[1], "r") as inf:
+    print(letter_count(inf, "e"))
+
+
+
+
+
+'''
+def check_args():
+    if len(sys.argv) < 2:
+        print("Usage: python es.py <filename>")
+        print("Please try again.\nExiting.")
+        # kill the program if we didnt get 2 args
+        sys.exit(1)
+    else:
+        inf = sys.argv[1]
+    return inf
+
+inf = check_args()
+
 
 # initialise empty variable to store the e count
 e_count = 0
@@ -35,24 +59,35 @@ e_count = 0
 # if the file not found, message displayed to console
 try:
     with open(sys.argv[1], "r") as inf:         #[1]
-    # read file line by line
-        for line in inf:
-            # E/e are two different characters
-            # make everything lowercase to make search easier
-            line = line.lower()
-            #print(line)
+        # next check if the 2nd arguement was a textfile
+        # check the extension, has to be .txt
+        # https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file
 
-            # iterate over each character in each line
-            for char in line:
-                #print(char)
-                # check if the character is e
-                if (char == "e"):
-                    # add to the e_count variable
-                    e_count += 1
+        if inf.endswith('.txt'):
+            print("It's a text file.")
+            # read file line by line
+            for line in inf:
+                # E/e are two different characters
+                # make everything lowercase to make search easier
+                line = line.lower()
+                #print(line)
+
+                # iterate over each character in each line
+                for char in line:
+                    #print(char)
+                    # check if the character is e
+                    if (char == "e"):
+                        # add to the e_count variable
+                        e_count += 1
+        else:
+            print("It's not a text file.\nExiting.")
+            sys.exit(1)
     print(f"Number of e's: {e_count}")
 
 except FileNotFoundError:
-    print("File not found, try again.", end="\n")
+    print("File not found.\nExiting.", end="\n")
+
+'''
 
 
 '''
