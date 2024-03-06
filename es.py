@@ -30,13 +30,13 @@ def letter_count(inf, letter):
 # i.e. the script name 'es.py' and the textfile name
 # 'example.txt'
 # https://stackoverflow.com/questions/2626026/python-sys-argv-lists-and-indexes
-if len(sys.argv) < 2:
+if len(sys.argv) != 2:
     print("Usage: python es.py <filename>\nExiting.")
     # kill the program if we didnt get 2 args
     sys.exit(1)
 else:
     try:
-        with open(sys.argv[1], "r") as inf:
+        with open(sys.argv[1], "r") as inf:     # [1]
             print(letter_count(inf, "e"))
     except FileNotFoundError:
         print("File not found.\nExiting.", end="\n")
@@ -94,9 +94,11 @@ except FileNotFoundError:
 '''
 
 
+
+
 '''
 [1] Open the file (example.txt) in read-only mode
-I'm using "with open" way as it automatically 
+I'm using the "with open" way as it automatically 
 closes the file after.
 - https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/
 Lets open the file and use some built-in string methods
