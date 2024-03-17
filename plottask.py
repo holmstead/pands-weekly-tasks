@@ -7,6 +7,7 @@ on the one set of axes.
 
 # shttps://numpy.org/doc/stable/index.html
 from numpy import random
+import numpy as np
 #
 import matplotlib.pyplot as plt
 
@@ -16,10 +17,18 @@ rand_array = random.randint(100, size=(1000))
 
 #print(rand_array)
 
+# use default_rng() function
+# random number generator to produce useful distributions
+# https://numpy.org/doc/stable/reference/random/generator.html
+rng = np.random.default_rng(seed=None)
+rand_ints = rng.integers(low=0, high=10, size=1000)
+print(rand_ints)
+
+
 # plot a histogram of the array
 # https://realpython.com/python-matplotlib-guide/
 # https://matplotlib.org/stable/gallery/statistics/hist.html
-plt.hist(rand_array, bins= 10, edgecolor='black')
+plt.hist(rand_ints, bins= 10, edgecolor='black')
  
 # display teh plot
 plt.show()
