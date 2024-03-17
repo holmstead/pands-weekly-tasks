@@ -52,15 +52,14 @@ print(f"Std deviation of distribution:\t {rand_array.std()}")
 # plot a histogram of the array
 #  - https://realpython.com/python-matplotlib-guide/
 #  - https://matplotlib.org/stable/gallery/statistics/hist.html
-plt.hist(rand_array, bins= 10, edgecolor='black')
+plt.hist(rand_array, bins= 10, edgecolor='black', label='Normal Distribution')
 
 # decorate the plot
-plt.legend()
-plt.xlabel('Value')
-plt.ylabel('Frequency')
-plt.title('Histogram of Random Numbers')
+#plt.xlabel('Value')
+#plt.ylabel('Frequency')
+#plt.title('Histogram of Random Numbers')
 
-# display teh plot
+# display the plot
 #plt.show()
 
 '''
@@ -78,7 +77,15 @@ for i in range(0, 10):
     y_values.append(i ** 3)
 
 # plot the function
-plt.plot(x_values, y_values, color='blue')
+plt.plot(x_values, y_values, color='blue', label='h(x) = x^3')
 
-# show the plot
+# add a legend to the figure
+plt.legend()
+
+# decorate plot
+#plt.title('h(x)=x3')
+plt.xlabel('Values / x')
+plt.ylabel('Frequency / h(x)')
+
+# display both plots omn same fig (hist and plot)
 plt.show()
