@@ -40,10 +40,7 @@ Next we use normal() method on the "initialized generator object" to get a Gauss
 '''
 # generate array of size 1000  
 # loc is mean, scale is std deviation 
-#rand_array = rng.normal(loc=5, scale=2.0, size=1000)
-
-# try standard_normal()
-rand_array = rng.standard_normal(mean=5, std=2, size=1000)
+rand_array = rng.normal(loc=5, scale=2.0, size=1000)
 
 # print the array to the console
 print(rand_array)
