@@ -5,10 +5,10 @@ This program displays:
 on the one set of axes.
 '''
 
-# shttps://numpy.org/doc/stable/index.html
+# https://numpy.org/doc/stable/index.html
 from numpy import random
 import numpy as np
-#
+# import submodule from matplotlib for plotting
 import matplotlib.pyplot as plt
 
 # genertae an 1-D array of size 1000, containing numbers up to 100
@@ -43,7 +43,7 @@ Next we use normal() method on the "initialized generator object" to get a Gauss
 rand_array = rng.normal(loc=5, scale=2.0, size=1000)
 
 # print the array to the console
-print(rand_array)
+#print(rand_array)
 
 # test if mean and std dev are what i want
 print(f"Mean of distribution:\t\t {rand_array.mean()}")
@@ -55,9 +55,30 @@ print(f"Std deviation of distribution:\t {rand_array.std()}")
 plt.hist(rand_array, bins= 10, edgecolor='black')
 
 # decorate the plot
+plt.legend()
 plt.xlabel('Value')
 plt.ylabel('Frequency')
 plt.title('Histogram of Random Numbers')
 
 # display teh plot
+#plt.show()
+
+'''
+Now do the function plotting
+Function:  h(x)=x3
+'''
+ # create empty list to store x and y values
+x_values = []
+y_values = []
+
+# calculate the function for x from zero to ten
+for i in range(0, 10):
+    # append to lists
+    x_values.append(i)
+    y_values.append(i ** 3)
+
+# plot the function
+plt.plot(x_values, y_values, color='blue')
+
+# show the plot
 plt.show()
