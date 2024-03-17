@@ -8,6 +8,7 @@ on the one set of axes.
 from numpy import random
 
 # genertae an array of size 1000, containing numbers up to 100
+# https://numpy.org/doc/stable/reference/random/generated/numpy.random.rand.html
 rand_array = random.randint(100, size=(1000))
 
 print(rand_array)
