@@ -40,12 +40,12 @@ Next we use normal() method on the "initialized generator object" to get a Gauss
 '''
 # generate array of size 1000  
 # loc is mean, scale is std deviation 
-rand_array = rng.normal(loc=5, scale=2.0, size=1000)
+rand_array = rng.normal(loc=5.0, scale=2.0, size=1000)
 
 # print the array to the console
 #print(rand_array)
 
-# test if mean and std dev are what i want
+# test if mean and std dev are what required
 print(f"Mean of distribution:\t\t {rand_array.mean()}")
 print(f"Std deviation of distribution:\t {rand_array.std()}")
 
@@ -66,18 +66,18 @@ plt.hist(rand_array, bins= 10, edgecolor='black', label='Normal Distribution')
 Now do the function plotting
 Function:  h(x)=x3
 '''
- # create empty list to store x and y values
-x_values = []
-y_values = []
+
+# creat dictionary for x and y vaolues
+data = {'x':[], 'y':[]}
 
 # calculate the function for x from zero to ten
 for i in range(0, 10):
-    # append to lists
-    x_values.append(i)
-    y_values.append(i ** 3)
+    # append to dictionary
+    data['x'].append(i)
+    data['y'].append(i ** 3)
 
 # plot the function
-plt.plot(x_values, y_values, color='blue', label='h(x) = x^3')
+plt.plot(data['x'], data['y'], color='blue', label='h(x) = x^3')
 
 # add a legend to the figure
 plt.legend()
