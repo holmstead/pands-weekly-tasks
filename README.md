@@ -13,6 +13,7 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 |     5| weekend.py    |
 |     6| squareroot.py |
 |     7| es.py         |
+|     8| plottask.py   |
 
 ## Description of each program
 
@@ -45,6 +46,10 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 7. `es.py`
 
    this program reads in a textfile (given as an arguement) and counts the number of instances of the letter E.
+
+8. `plottask.py`
+
+   this program displays a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function  h(x)=x3 in the range 0 to 10 on the one set of axes.
 
 ## References
 
