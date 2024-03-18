@@ -35,8 +35,7 @@ rng = np.random.default_rng(seed=None)
 print(rng)
 
 '''
-Next we use normal() method on the "initialized generator object" to get a Gaussian distributiuon of random floats
- - https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html#numpy.random.Generator.normal
+Next we use normal() method on the "initialized generator object" to get a Gaussian distributiuon of random floats [1.0]
 '''
 # generate array of size 1000  
 # loc is mean, scale is std deviation 
@@ -49,18 +48,14 @@ rand_array = rng.normal(loc=5.0, scale=2.0, size=1000)
 print(f"Mean of distribution:\t\t {rand_array.mean()}")
 print(f"Std deviation of distribution:\t {rand_array.std()}")
 
-# plot a histogram of the array
-#  - https://realpython.com/python-matplotlib-guide/
-#  - https://matplotlib.org/stable/gallery/statistics/hist.html
-plt.hist(rand_array, bins= 10, edgecolor='black', label='Normal Distribution')
 
-# decorate the plot
-#plt.xlabel('Value')
-#plt.ylabel('Frequency')
-#plt.title('Histogram of Random Numbers')
+# set up the canvas
+# (N, n) sets how many subplots: N row, n columns
+fig, ax = plt.subplots(1, 1) 
 
-# display the plot
-#plt.show()
+# plot a histogram of the array [1.2][1.3]
+ax.hist(rand_array, bins= 10, edgecolor='black', label='Normal Distribution')
+
 
 '''
 Now do the function plotting
@@ -76,16 +71,25 @@ for i in range(0, 10):
     data['x'].append(i)
     data['y'].append(i ** 3)
 
-# plot the function
-plt.plot(data['x'], data['y'], color='blue', label='h(x) = x^3')
+
+# plot the function on the same axis as the histogram
+ax.plot(data['x'], data['y'], color='blue', label='h(x) = x^3')
 
 # add a legend to the figure
-plt.legend()
+ax.legend()
 
 # decorate plot
-#plt.title('h(x)=x3')
-plt.xlabel('Values / x')
-plt.ylabel('Frequency / h(x)')
+ax.set_xlabel('Values / x')
+ax.set_ylabel('Frequency / h(x)')
 
-# display both plots omn same fig (hist and plot)
+# display figure containing histogram and plot
 plt.show()
+
+
+'''
+References
+
+[1.0] https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html#numpy.random.Generator.normal
+[1.2] https://realpython.com/python-matplotlib-guide/
+[1.3] https://matplotlib.org/stable/gallery/statistics/hist.html
+'''
