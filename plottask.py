@@ -48,21 +48,7 @@ rand_array = rng.normal(loc=5.0, scale=2.0, size=1000)
 print(f"Mean of distribution:\t\t {rand_array.mean()}")
 print(f"Std deviation of distribution:\t {rand_array.std()}")
 
-
-# set up the canvas
-# (N, n) sets how many subplots: N row, n columns
-fig, ax = plt.subplots(1, 1) 
-
-# plot a histogram of the array [1.2][1.3]
-ax.hist(rand_array, bins= 10, edgecolor='black', label='Normal Distribution')
-
-
-'''
-Now do the function plotting
-Function:  h(x)=x3
-'''
-
-# creat dictionary for x and y vaolues
+# creat dictionary for x and y values
 data = {'x':[], 'y':[]}
 
 # calculate the function for x from zero to ten
@@ -71,19 +57,37 @@ for i in range(0, 10):
     data['x'].append(i)
     data['y'].append(i ** 3)
 
+'''
+Now do the function plotting
+Function:  h(x)=x3
+'''
 
 # plot the function on the same axis as the histogram
-ax.plot(data['x'], data['y'], color='blue', label='h(x) = x^3')
+# just discovered XKCD style plots
+# https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xkcd.html
+with plt.xkcd():
+    # set up the canvas
+    # (N, n) sets how many subplots: N row, n columns
+    fig, ax = plt.subplots(1, 1) 
 
-# add a legend to the figure
-ax.legend()
+    # plot a histogram of the array [1.2][1.3]
+    ax.hist(rand_array, bins= 10, edgecolor='black', label='Normal Distribution')
 
-# decorate plot
-ax.set_xlabel('Values / x')
-ax.set_ylabel('Frequency / h(x)')
+    #ax.spines[['top', 'right']].set_visible(False)
+    ax.plot(data['x'], data['y'], color='blue', label='h(x) = x^3')
+    
+    # add a legend to the figure
+    ax.legend()
 
+    # decorate plot
+    ax.set_xlabel('Values / x')
+    ax.set_ylabel('Frequency / h(x)')
+    
+# auto adjust layout
+plt.tight_layout()
 # display figure containing histogram and plot
 plt.show()
+plt.close()
 
 
 '''
