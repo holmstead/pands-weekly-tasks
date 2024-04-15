@@ -1,6 +1,6 @@
 # This program outputs whether or not today is a weekday.
 
-# import datetime library [1]
+# import datetime library
 from datetime import datetime
 
 
@@ -13,7 +13,7 @@ def check_if_weekend():
     # store day integer in a variable
     i = datetime.now().weekday()
     
-    # print name of day uings strftime() method [2], [3]
+    # print name of day using strftime() method
     print(f"Today is {datetime.now().strftime('%A')}")
 
     # Sat is 5, Sun is 6. Both are > 4
@@ -26,7 +26,7 @@ def check_if_weekend():
         return answer
 
 
-# create main() function [4], [5]
+# create main() function
 def main():
     # call the function
     is_weekend = check_if_weekend()
@@ -34,13 +34,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-'''
-[1] https://docs.python.org/3/library/datetime.html
-[2] https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
-[3] https://www.geeksforgeeks.org/python-strftime-function/
-[4] https://realpython.com/if-name-main-python/
-[5] https://www.youtube.com/watch?v=g_wlZ9IhbTs&t=103s
-
-'''
