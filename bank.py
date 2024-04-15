@@ -1,5 +1,9 @@
 '''
-This program prompts the user and reads in two money amounts (in cent), adds the two amounts, then prints out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
+This program prompts the user and reads in two money 
+amounts (in cent), adds the two amounts, then prints out 
+the answer in a human readable format with a euro sign 
+and decimal point between the euro and cent of the 
+amount. 
 '''
 
 # create function to read integer from user, using exception handling 
@@ -13,19 +17,9 @@ def read_num():
             print("Please enter a valid integer.", end=" ")
     return num
 
-'''
-Check if an integer was entered or not.
-Called exception handling.
-See below for Exception handling examples using while loops, and handling ValueErrors
- - https://www.freecodecamp.org/news/exception-handling-python/
-
-ValueError is a built-in exception in python:
- - https://docs.python.org/3/library/exceptions.html
-A ValueError is "raised when an operation or function receives an argument that has the right type but an inappropriate value, and the situation is not described by a more precise exception such as IndexError."
-'''
 
 # call the function for both inputs
-amount1 = read_num()
+amount1 = read_num() 
 amount2 = read_num()
 
 # create function to add cents then convert to euro
