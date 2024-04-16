@@ -5,7 +5,6 @@ This program displays:
 on the one set of axes.
 '''
 
-from numpy import random
 import numpy as np
 # import submodule from matplotlib for plotting
 import matplotlib.pyplot as plt
@@ -27,15 +26,15 @@ rand_array = rng.normal(loc=5.0, scale=2.0, size=1000)
 print(f"Mean of distribution:\t\t {rand_array.mean()}")
 print(f"Std deviation of distribution:\t {rand_array.std()}")
 
-# create dictionary for x and y values
-data = {"x":[], "y":[]}
+# use lists for storing x and y values
+x_values = []
+y_values = []
+for i in range(10):
+    x_values.append(i)
+    y_values.append(i ** 3)
 
-# calculate the function for x from zero to ten
-for i in range(0, 10):
-    # append to dictionary
-    data["x"].append(i)
-    data["y"].append(i ** 3)
-
+# numpy arrays are supposed to be good for storing numbers like this
+# https://numpy.org/doc/stable/user/absolute_beginners.html
 
 # plot the function h(x)=x3 and histogram on the same axis
 # XKCD style plots
@@ -49,7 +48,7 @@ with plt.xkcd():
     ax.hist(rand_array, bins= 10, edgecolor="black", label="Normal Distribution")
 
     # plot the line on the same axes
-    ax.plot(data["x"], data["y"], color="blue", label="h(x) = x^3")
+    ax.plot(x_values, y_values, color="blue", label="h(x) = x^3")
     
     # add a legend to the figure
     ax.legend()
