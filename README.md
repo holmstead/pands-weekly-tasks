@@ -19,11 +19,15 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
 # Get Started
 
-Python is a general purpose programming language. The Python interperter can be downloaded [here](https://www.python.org/downloads/). As well as Python, several libraries were used in the analysis. Install the required libraries using the following command:
+Python is a general purpose programming language. The Python interperter can be downloaded [here](https://www.python.org/downloads/). Several libraries were used in the analysis. 
+
+Install the required libraries using the following command:
 
 ```
 python pip install pandas matplotlib seaborn numpy
 ```
+
+More information about the libraries used in this analysis can be found below:
 
 1. Pandas
    - https://pandas.pydata.org/
@@ -54,11 +58,11 @@ python example.py
 
 ## 1. `helloworld.py`
 
-Prints "helloworld!" to the console.
+This program "helloworld!" to the console.
 
 ## 2. `bank.py`
 
-Takes two integers (cents) from the user, adds them together and returns the value in Euros. *Automate the Boring Stuff* has a good chapter on basic input/output and simple math operations
+This program takes two integers (cents) from the user, adds them together and returns the value in Euros. *Automate the Boring Stuff* has a good chapter on basic input/output and simple math operations
 
 - https://automatetheboringstuff.com/2e/chapter1/
 
@@ -82,7 +86,7 @@ Quoting the python docs regarding ValueErrors:
 
 ## 3. `accounts.py`
 
-this program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+This program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 Numbers are stored as strings. As w3schools states, "strings are arrays". Array operation apply to strings.
 
@@ -122,7 +126,7 @@ Removed space between Xs and the 4 numbers using sep=""
 print('X' * number_of_Xs, account_number[-4:], sep="")
 ```
 
-## 4. collatz.py
+## 4. `collatz.py`
 
 This program reads in a positive integer and performs the collatz conjecture.
 
@@ -139,9 +143,9 @@ The modulo operator can be used to determine if a given integer is even or odd:
 - https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/
 
 
-## 5. weekdays.py
+## 5. `weekdays.py`
 
-This program reads idetermines the day of the week and responds appropriately.
+This program determines the day of the week and responds appropriately.
 
 Uses the datetime library:
 
@@ -160,7 +164,7 @@ Create main() function:
 - https://www.youtube.com/watch?v=g_wlZ9IhbTs&t=103s
 
 
-## 6. squareroot.py
+## 6. `squareroot.py`
 
 This program reads in a positive float and give the approximate square root using the Newton–Raphson method.
 
@@ -193,7 +197,7 @@ it converges toward the correct answer
 Closer to zero is closer to correct answer
 
 
-## 7. es.py
+## 7. `es.py`
 
 This program reads in a textfile (given as an arguement) and counts the number of instances of the letter E.
 
@@ -222,7 +226,7 @@ Uses sys.exit() to kill program if not enough arguements passed in
 - https://docs.python.org/2/library/sys.html#sys.exit
 
 
-## 8. plottask.py
+## 8. `plottask.py`
 
 This program displays a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function  h(x)=x3 in the range 0 to 10 on the one set of axes.
 
@@ -255,7 +259,7 @@ Tried to use the stateless approach:
 
 - https://realpython.com/python-matplotlib-guide/
 
-Histoggram of the array:
+Histogram of the array:
 
 - https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
 
@@ -284,14 +288,14 @@ README file is styled following several guides:
 
 - https://github.com/coderefinery/documentation/blob/main/content/writing-readme-files.md
 
-Git commit messages are styled following git docs: 
+Git commit messages are styled following git guides: 
 
 - https://github.com/git-guides/git-commit
 
 
 ## Get Help
 
-Python libraries Matplotlib, Pandas, Seaborn, and NumPy all have comprehensive user guides in the official docs:
+Python libraries Matplotlib, Pandas, Seaborn, and NumPy all have comprehensive user guides and tutorials in the official docs:
 
 - https://matplotlib.org/stable/users/index.html
 
