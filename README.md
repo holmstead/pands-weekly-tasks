@@ -58,7 +58,12 @@ python example.py
 
 ## 1. `helloworld.py`
 
-This program "helloworld!" to the console.
+This program prints "hello World!" to the console.
+
+```
+$ python hello world.py
+Hello World! 
+```
 
 ## 2. `bank.py`
 
