@@ -19,11 +19,15 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
 # Get Started
 
-Python is a general purpose programming language. The Python interperter can be downloaded [here](https://www.python.org/downloads/). As well as Python, several libraries were used in the analysis. Install the required libraries using the following command:
+Python is a general purpose programming language. The Python interperter can be downloaded [here](https://www.python.org/downloads/). Several libraries were used in the analysis. 
+
+Install the required libraries using the following command:
 
 ```
 python pip install pandas matplotlib seaborn numpy
 ```
+
+More information about the libraries used in this analysis can be found below:
 
 1. Pandas
    - https://pandas.pydata.org/
@@ -55,11 +59,16 @@ python example.py
 
 ## 1. `helloworld.py`
 
-Prints "helloworld!" to the console.
+This program prints "hello World!" to the console.
+
+```
+$ python hello world.py
+Hello World! 
+```
 
 ## 2. `bank.py`
 
-Takes two integers (cents) from the user, adds them together and returns the value in Euros. *Automate the Boring Stuff* has a good chapter on basic input/output and simple math operations
+This program takes two integers (cents) from the user, adds them together and returns the value in Euros. *Automate the Boring Stuff* has a good chapter on basic input/output and simple math operations
 
 - https://automatetheboringstuff.com/2e/chapter1/
 
@@ -83,7 +92,7 @@ Quoting the python docs regarding ValueErrors:
 
 ## 3. `accounts.py`
 
-this program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+This program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 Numbers are stored as strings. As w3schools states, "strings are arrays". Array operation apply to strings.
 
@@ -142,7 +151,7 @@ The modulo operator can be used to determine if a given integer is even or odd:
 
 ## 5. `weekdays.py`
 
-This program reads idetermines the day of the week and responds appropriately.
+This program determines the day of the week and responds appropriately.
 
 Uses the datetime library:
 
@@ -256,7 +265,7 @@ Tried to use the stateless approach:
 
 - https://realpython.com/python-matplotlib-guide/
 
-Histoggram of the array:
+Histogram of the array:
 
 - https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
 
@@ -285,14 +294,14 @@ README file is styled following several guides:
 
 - https://github.com/coderefinery/documentation/blob/main/content/writing-readme-files.md
 
-Git commit messages are styled following git docs: 
+Git commit messages are styled following git guides: 
 
 - https://github.com/git-guides/git-commit
 
 
 ## Get Help
 
-Python libraries Matplotlib, Pandas, Seaborn, and NumPy all have comprehensive user guides in the official docs:
+Python libraries Matplotlib, Pandas, Seaborn, and NumPy all have comprehensive user guides and tutorials in the official docs:
 
 - https://matplotlib.org/stable/users/index.html
 
