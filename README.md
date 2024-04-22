@@ -44,11 +44,12 @@ Clone the repository:
 git clone https://github.com/holmstead/pands-project.git
 ```
 
-Once everything is installed, run the following command in the console: 
+Once everything is installed, you can run a program by opening the command line and typing the following: 
 
 ```
 python example.py
 ```
+
 
 # About
 
@@ -122,7 +123,7 @@ Removed space between Xs and the 4 numbers using sep=""
 print('X' * number_of_Xs, account_number[-4:], sep="")
 ```
 
-## 4. collatz.py
+## 4. `collatz.py`
 
 This program reads in a positive integer and performs the collatz conjecture.
 
@@ -139,7 +140,7 @@ The modulo operator can be used to determine if a given integer is even or odd:
 - https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/
 
 
-## 5. weekdays.py
+## 5. `weekdays.py`
 
 This program reads idetermines the day of the week and responds appropriately.
 
@@ -160,7 +161,7 @@ Create main() function:
 - https://www.youtube.com/watch?v=g_wlZ9IhbTs&t=103s
 
 
-## 6. squareroot.py
+## 6. `squareroot.py`
 
 This program reads in a positive float and give the approximate square root using the Newton–Raphson method.
 
@@ -193,7 +194,7 @@ it converges toward the correct answer
 Closer to zero is closer to correct answer
 
 
-## 7. es.py
+## 7. `es.py`
 
 This program reads in a textfile (given as an arguement) and counts the number of instances of the letter E.
 
@@ -222,7 +223,7 @@ Uses sys.exit() to kill program if not enough arguements passed in
 - https://docs.python.org/2/library/sys.html#sys.exit
 
 
-## 8. plottask.py
+## 8. `plottask.py`
 
 This program displays a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function  h(x)=x3 in the range 0 to 10 on the one set of axes.
 
@@ -308,6 +309,10 @@ Juypter Notebooks and VSCode user guides can be found here:
 
 https://code.visualstudio.com/docs/introvideos/basics
 
+
+RealPython website has a good Pandas tutorial:
+
+- https://realpython.com/pandas-dataframe/
 
 ## Author
 
