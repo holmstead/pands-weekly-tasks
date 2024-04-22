@@ -61,7 +61,7 @@ python example.py
 
 This program prints "hello World!" to the console.
 
-```
+```bash
 $ python hello world.py
 Hello World! 
 ```
@@ -89,6 +89,9 @@ ValueError is a built-in exception in python:
 Quoting the python docs regarding ValueErrors: 
    
 > Raised when an operation or function receives an argument that has the right type but an inappropriate value, and the situation is not described by a more precise exception such as IndexError.
+
+```
+```
 
 ## 3. `accounts.py`
 
