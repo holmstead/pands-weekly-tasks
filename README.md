@@ -61,6 +61,8 @@ python example.py
 
 This program prints "hello World!" to the console.
 
+Example:
+
 ```bash
 $ python hello world.py
 Hello World! 
@@ -86,11 +88,17 @@ ValueError is a built-in exception in python:
    
 - https://docs.python.org/3/library/exceptions.html
    
-Quoting the python docs regarding ValueErrors: 
+According to the Python docs ValueErrors are ... 
    
 > Raised when an operation or function receives an argument that has the right type but an inappropriate value, and the situation is not described by a more precise exception such as IndexError.
 
-```
+Example:
+
+```bash
+$ python bank.py 
+Enter amount (in cent): 54
+Enter amount (in cent): 345
+The sum of these is €3.99
 ```
 
 ## 3. `accounts.py`
@@ -135,6 +143,14 @@ Removed space between Xs and the 4 numbers using sep=""
 print('X' * number_of_Xs, account_number[-4:], sep="")
 ```
 
+Example:
+
+```bash
+$ python accounts.py 
+Please enter an 10 digit account number: 1234567890
+XXXXXX7890
+```
+
 ## 4. `collatz.py`
 
 This program reads in a positive integer and performs the collatz conjecture.
@@ -151,6 +167,13 @@ The modulo operator can be used to determine if a given integer is even or odd:
 
 - https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/
 
+Example:
+
+```bash
+$ python  collatz.py 
+Please enter a positive integer: 34
+17 52 26 13 40 20 10 5 16 8 4 2 1
+```
 
 ## 5. `weekdays.py`
 
@@ -172,6 +195,13 @@ Create main() function:
 
 - https://www.youtube.com/watch?v=g_wlZ9IhbTs&t=103s
 
+Example on a Monday:
+
+```bash
+$ python weekday.py 
+Today is Monday
+Yes, unfortunately today is a weekday.
+```
 
 ## 6. `squareroot.py`
 
@@ -205,6 +235,14 @@ it converges toward the correct answer
 
 Closer to zero is closer to correct answer
 
+Example:
+
+```bash
+$ python squareroot.py 
+Enter an integer to determine the square root: 64
+The square root is approximately: 8.00000000000017
+Built in method says: 8.0
+```
 
 ## 7. `es.py`
 
@@ -234,6 +272,12 @@ Uses sys.exit() to kill program if not enough arguements passed in
 
 - https://docs.python.org/2/library/sys.html#sys.exit
 
+Example:
+
+```bash
+$ python es.py boolean_limerick.txt 
+14
+```
 
 ## 8. `plottask.py`
 
@@ -286,6 +330,15 @@ The tight_layout() funtion is used to auto adjust plots to fit everything in nic
 
 - https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html
 
+Example:
+
+```bash
+$ python plottask.py
+```
+
+Generates the following output:
+
+![plottask](plottask_output.png)
 
 ## Note
 
