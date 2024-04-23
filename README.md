@@ -19,15 +19,17 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 
 # Get Started
 
-Python is a general purpose programming language. The Python interperter can be downloaded [here](https://www.python.org/downloads/). Several libraries were used in the analysis. 
+Python is a general purpose programming language. The Python interperter can be downloaded [here](https://www.python.org/downloads/). 
 
-Install the required libraries using the following command:
+Several [packages](https://pypi.org/) were used in the analysis.
+
+Install the required packages using the following command:
 
 ```
 python pip install pandas matplotlib seaborn numpy
 ```
 
-More information about the libraries used in this analysis can be found below:
+More information about the packages used in this analysis can be found below:
 
 1. Pandas
    - https://pandas.pydata.org/
@@ -48,11 +50,7 @@ Clone the repository:
 git clone https://github.com/holmstead/pands-project.git
 ```
 
-Once everything is installed, you can run a program by opening the command line and typing the following: 
-
-```
-python example.py
-```
+Once everything is installed and the repository cloned, you can run a program by opening the command line and typing the commands shown in the program descriptions below.
 
 
 # About
@@ -63,7 +61,7 @@ This program prints "hello World!" to the console.
 
 Example:
 
-```bash
+```
 $ python hello world.py
 Hello World! 
 ```
@@ -94,7 +92,7 @@ According to the Python docs ValueErrors are ...
 
 Example:
 
-```bash
+```
 $ python bank.py 
 Enter amount (in cent): 54
 Enter amount (in cent): 345
@@ -145,7 +143,7 @@ print('X' * number_of_Xs, account_number[-4:], sep="")
 
 Example:
 
-```bash
+```
 $ python accounts.py 
 Please enter an 10 digit account number: 1234567890
 XXXXXX7890
@@ -169,7 +167,7 @@ The modulo operator can be used to determine if a given integer is even or odd:
 
 Example:
 
-```bash
+```
 $ python  collatz.py 
 Please enter a positive integer: 34
 17 52 26 13 40 20 10 5 16 8 4 2 1
@@ -197,7 +195,7 @@ Create main() function:
 
 Example on a Monday:
 
-```bash
+```
 $ python weekday.py 
 Today is Monday
 Yes, unfortunately today is a weekday.
@@ -237,7 +235,7 @@ Closer to zero is closer to correct answer
 
 Example:
 
-```bash
+```
 $ python squareroot.py 
 Enter an integer to determine the square root: 64
 The square root is approximately: 8.00000000000017
@@ -274,7 +272,7 @@ Uses sys.exit() to kill program if not enough arguements passed in
 
 Example:
 
-```bash
+```
 $ python es.py boolean_limerick.txt 
 14
 ```
@@ -332,7 +330,7 @@ The tight_layout() funtion is used to auto adjust plots to fit everything in nic
 
 Example:
 
-```bash
+```
 $ python plottask.py
 ```
 
@@ -342,13 +340,16 @@ Generates the following output:
 
 ## Note
 
-README file is styled following several guides:
+README file is styled following several guides. The "Basic writing and formatting syntax" guide shows how to format headings, make lists, add links, add images, formatting code blocks etc.
 
 - https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+FreeCodeCamp and GitHub both give a good overview of how to create a _good_ README, and why thats important:
 
 - https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 
 - https://github.com/coderefinery/documentation/blob/main/content/writing-readme-files.md
+
 
 Git commit messages are styled following git guides: 
 
