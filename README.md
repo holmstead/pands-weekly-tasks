@@ -336,7 +336,7 @@ $ python plottask.py
 
 Generates the following output:
 
-![plottask](plottask_output.png)
+![plottask](img/plottask_output.png)
 
 ## Note
 
