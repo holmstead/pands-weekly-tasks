@@ -264,7 +264,7 @@ Check if two arguements were passed in to python i.e. the script name 'es.py' an
 
 Handles FileNotFound errors
 
-- - https://docs.python.org/3/library/exceptions.html
+- https://docs.python.org/3/library/exceptions.html
 
 Uses sys.exit() to kill program if not enough arguements passed in 
 
@@ -373,7 +373,7 @@ Juypter Notebooks and VSCode user guides can be found here:
 
 - https://jupyter.brynmawr.edu/services/public/dblank/Jupyter%20Notebook%20Users%20Manual.ipynb
 
-https://code.visualstudio.com/docs/introvideos/basics
+- https://code.visualstudio.com/docs/introvideos/basics
 
 
 RealPython website has a good Pandas tutorial:
