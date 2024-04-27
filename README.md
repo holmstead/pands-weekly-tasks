@@ -232,7 +232,7 @@ See the square root example on Wikipedia:
 
 - https://en.wikipedia.org/wiki/Newton's_method#Square_root
 
-We can write $ x = \sqrt{a} $
+We can write $` x = \sqrt{a} `$
 
 Therefore $ x^2 = a $ 
 
