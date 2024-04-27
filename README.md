@@ -234,11 +234,11 @@ See the square root example on Wikipedia:
 
 We can write $` x = \sqrt{a} `$
 
-Therefore $ x^2 = a $ 
+Therefore $` x^2 = a `$ 
 
-Or we can write it as $ x^2 - a = 0 $
+Or we can write it as $` x^2 - a = 0 `$
 
-The derivative of that is $ 2x $.
+The derivative of that is $` 2x `$.
 
 So we have:
 
