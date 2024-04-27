@@ -16,20 +16,21 @@ This repository contains solutions to the weekly problem sheets in the module Pr
 |     7| es.py         |
 |     8| plottask.py   |
 
+# About
 
-# Get Started
+Python is a general purpose programming language.
 
-Python is a general purpose programming language. The Python interperter can be downloaded [here](https://www.python.org/downloads/). 
+The programs/scripts in this repo were written using VSCode, a free open-source Integrated Development Environment (IDE).
 
-Several [packages](https://pypi.org/) were used in the analysis.
+Several libraries were used in the analysis that are not part of the Python Standard Library and must be downloaded seperately. You can read more about the differences between scripts, modules, packages and libraries below:
 
-Install the required packages using the following command:
+- https://realpython.com/lessons/scripts-modules-packages-and-libraries/
 
-```
-python pip install pandas matplotlib seaborn numpy
-```
+There is an online repository called the Python Package Index (PyPI) which helps find and install packages developed by the Python community.
 
-More information about the packages used in this analysis can be found below:
+- https://pypi.org/
+
+More information about the libraries used in this analysis can be found below:
 
 1. Pandas
    - https://pandas.pydata.org/
@@ -44,6 +45,19 @@ More information about the packages used in this analysis can be found below:
    - https://numpy.org/
 
 
+
+# Get Started
+
+The Python interperter can be downloaded [here](https://www.python.org/downloads/). 
+
+Download VSCode [here](https://code.visualstudio.com/download).
+
+Install the required libraries using the following command:
+
+```
+python pip install pandas matplotlib seaborn numpy
+```
+
 Clone the repository:
 
 ```
@@ -53,16 +67,16 @@ git clone https://github.com/holmstead/pands-project.git
 Once everything is installed and the repository cloned, you can run a program by opening the command line and typing the commands shown in the program descriptions below.
 
 
-# About
+# Program Descriptions
 
 ## 1. `helloworld.py`
 
-This program prints "hello World!" to the console.
+This program prints "Hello World!" to the console.
 
 Example:
 
 ```
-$ python hello world.py
+$ python helloworld.py
 Hello World! 
 ```
 
@@ -168,7 +182,7 @@ The modulo operator can be used to determine if a given integer is even or odd:
 Example:
 
 ```
-$ python  collatz.py 
+$ python collatz.py 
 Please enter a positive integer: 34
 17 52 26 13 40 20 10 5 16 8 4 2 1
 ```
@@ -205,33 +219,40 @@ Yes, unfortunately today is a weekday.
 
 This program reads in a positive float and give the approximate square root using the Newton–Raphson method.
 
+Newtons method is an iterative process.
+
 See Equation 4.9.1 in link below:
 
 - https://math.libretexts.org/Bookshelves/Calculus/Calculus_(OpenStax)/04%3A_Applications_of_Derivatives/4.09%3A_Newtons_Method
-    
+
+
+$$ x_n=x_{n−1}−\frac{f(x_{n−1})}{f'(x_{n−1})} $$ 
+
 See the square root example on Wikipedia:
 
 - https://en.wikipedia.org/wiki/Newton's_method#Square_root
 
-We can write x = sqrt(a)
+We can write $ x = \sqrt{a} $
 
-Therefore: x^2 = a 
+Therefore $ x^2 = a $ 
 
-Or we can write it as: x^2 - a = 0
+Or we can write it as $ x^2 - a = 0 $
 
-The derivative of that is 2x
+The derivative of that is $ 2x $.
 
-Plug the guess into the equation
+So we have:
 
-Then use the result to put back into the equation
-   see 4.9.1 example in libretexts link above
+$$ y = x - \frac{(x^2 - a)}{(2x)} $$
 
-Compare the new result with the previous result
+Make a guess for x, calculate y.
 
-Each time the difference will get smaller and smaller as 
-it converges toward the correct answer
+Then use that result to put back into the equation as a new guess.
 
-Closer to zero is closer to correct answer
+Compare the new result with the previous result.
+
+Each time the difference will get smaller and smaller as it converges toward the correct answer.
+
+Closer to zero is closer to correct answer.
 
 Example:
 
