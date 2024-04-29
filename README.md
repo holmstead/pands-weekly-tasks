@@ -72,7 +72,7 @@ $ python helloworld.py
 Hello World! 
 ```
 
-## 2. [`bank.py`](bank.py)
+## 2. [```bank.py```](bank.py)
 This program takes two integers (cents) from the user, adds them together and returns the value in Euros. *Automate the Boring Stuff* has a good chapter on basic input/output and simple math operations
 
 - https://automatetheboringstuff.com/2e/chapter1/
