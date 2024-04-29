@@ -61,7 +61,7 @@ Once everything is installed and the repository cloned, you can run a program by
 
 # Program Descriptions
 
-## 1. (`helloworld.py`)[./helloworld.py]
+## 1. [`helloworld.py`](helloworld.py)
 
 This program prints "Hello World!" to the console.
 
