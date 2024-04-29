@@ -22,9 +22,7 @@ Python is a general purpose programming language.
 
 The programs/scripts in this repo were written using VSCode, a free open-source Integrated Development Environment (IDE).
 
-Several libraries were used in the analysis that are not part of the Python Standard Library and must be downloaded seperately. You can read more about the differences between scripts, modules, packages and libraries below:
-
-- https://realpython.com/lessons/scripts-modules-packages-and-libraries/
+In a couple of the tasks [libraries](https://realpython.com/lessons/scripts-modules-packages-and-libraries/) were used that are not part of the Python Standard Library and must be downloaded seperately. Instructions on how to install these libraries can be found in the Get Started section.
 
 There is an online repository called the Python Package Index (PyPI) which helps find and install packages developed by the Python community.
 
@@ -32,16 +30,10 @@ There is an online repository called the Python Package Index (PyPI) which helps
 
 More information about the libraries used in this analysis can be found below:
 
-1. Pandas
-   - https://pandas.pydata.org/
-
-2. Matplotlib
+1. Matplotlib
    - https://matplotlib.org/
 
-3. Seaborn
-   - https://seaborn.pydata.org/
-
-4. NumPy
+2. NumPy
    - https://numpy.org/
 
 
@@ -55,7 +47,7 @@ Download VSCode [here](https://code.visualstudio.com/download).
 Install the required libraries using the following command:
 
 ```
-python pip install pandas matplotlib seaborn numpy
+python pip install matplotlib numpy
 ```
 
 Clone the repository:
@@ -69,7 +61,7 @@ Once everything is installed and the repository cloned, you can run a program by
 
 # Program Descriptions
 
-## 1. `helloworld.py`
+## 1. (`helloworld.py`)[helloworld.py]
 
 This program prints "Hello World!" to the console.
 
@@ -379,13 +371,9 @@ Git commit messages are styled following git guides:
 
 ## Get Help
 
-Python libraries Matplotlib, Pandas, Seaborn, and NumPy all have comprehensive user guides and tutorials in the official docs:
+Python libraries Matplotlib and NumPy both have comprehensive user guides and tutorials in the official docs:
 
 - https://matplotlib.org/stable/users/index.html
-
-- https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html
-
-- https://seaborn.pydata.org/tutorial.html
 
 - https://numpy.org/doc/stable/user/index.html
 
