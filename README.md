@@ -72,7 +72,7 @@ $ python helloworld.py
 Hello World! 
 ```
 
-## 2. [```bank.py```](bank.py)
+## 2. [bank.py](bank.py)
 This program takes two integers (cents) from the user, adds them together and returns the value in Euros. *Automate the Boring Stuff* has a good chapter on basic input/output and simple math operations
 
 - https://automatetheboringstuff.com/2e/chapter1/
@@ -104,7 +104,7 @@ Enter amount (in cent): 345
 The sum of these is €3.99
 ```
 
-## 3. [`accounts.py`](accounts.py)
+## 3. [accounts.py](accounts.py)
 
 This program reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
@@ -154,7 +154,7 @@ Please enter an 10 digit account number: 1234567890
 XXXXXX7890
 ```
 
-## 4. [`collatz.py`](collatz.py)
+## 4. [collatz.py](collatz.py)
 
 This program reads in a positive integer and performs the collatz conjecture.
 
@@ -178,7 +178,7 @@ Please enter a positive integer: 34
 17 52 26 13 40 20 10 5 16 8 4 2 1
 ```
 
-## 5. [`weekdays.py`](weekdays.py)
+## 5. [weekdays.py](weekdays.py)
 
 This program determines the day of the week and responds appropriately.
 
@@ -206,7 +206,7 @@ Today is Monday
 Yes, unfortunately today is a weekday.
 ```
 
-## 6. [`squareroot.py`](squareroot.py)
+## 6. [squareroot.py](squareroot.py)
 
 This program reads in a positive float and give the approximate square root using the Newton–Raphson method.
 
@@ -254,7 +254,7 @@ The square root is approximately: 8.00000000000017
 Built in method says: 8.0
 ```
 
-## 7. [`es.py`](es.py)
+## 7. [es.py](es.py)
 
 This program reads in a textfile (given as an arguement) and counts the number of instances of the letter E.
 
@@ -289,7 +289,7 @@ $ python es.py boolean_limerick.txt
 14
 ```
 
-## 8. [`plottask.py`](plottask.py)
+## 8. [plottask.py](plottask.py)
 
 This program displays a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function  h(x)=x3 in the range 0 to 10 on the one set of axes.
 
